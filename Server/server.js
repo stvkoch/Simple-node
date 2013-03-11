@@ -34,8 +34,8 @@ if (cluster.isMaster && process.argv[3] ) {
     var resource = router.getResourceByUri(requestParsed.pathname);
 
 
-  var dispatch = require('Simple/Controller/Dispatch');
-  dispatch.resource(resource, requestParsed, response);
+    var dispatch = require('Simple/Controller/Dispatch');
+    dispatch.resource(resource, requestParsed, response);
 
   }).listen(port);
 }
