@@ -96,15 +96,29 @@ Basic routes are (Routes/routes.js):
 
 
 
+## Run example
+
+This code is really functional.
+
+ Frontend folder contain you own routes and server, you can add your View and Helper-Model layer
+
+ 
+ ### Install
+
+ 	git clone git@github.com:stvkoch/Simple-node.git yourSimpleApp
+ 	cd yourSimpleApp
+ 	#run single server
+ 	node Frontend/Server/server.js 3000
+
+ 	#run cluster mode
+ 	node Frontend/Server/server.js 3000 true
 
 
 
-
-
-
-
-
-
+ 	open browser
+ 	http://localhost:3000/home/index/a/b
+ 	http://localhost:3000/home/show
+ 	http://localhost:3000/index/index
 
 
 
