@@ -5,8 +5,8 @@
 
 Simple Components helps build their bundled applications simply. Unpretentious way we want to help you save time and less development efforts.
 
-Components of library living on Simple folder.
- - Frontend is the folder where the living files of controller.
+ - Components of library living on Simple folder.
+ - Frontend is the folder where the living files of controller.(you can change location setting dispatch.path)
  - Routes is the folder where you save object routes.
 
 ## How works

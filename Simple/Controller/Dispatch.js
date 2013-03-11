@@ -5,11 +5,12 @@ dispatch.resource( resource );
 
 
 module.exports = {
+	path:'',
 	resource: function( resource, request, response ){
 
 			process.nextTick( function(){
 				try{
-					var controller = require(resource.module+'/'+resource.controller );
+					var controller = require(this.path + resource.module+'/'+resource.controller );
 
 					if(controller.has(resource)){
 						controller.call( resource, request, response );
