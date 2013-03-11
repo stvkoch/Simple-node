@@ -98,7 +98,7 @@ Basic routes are (Routes/routes.js):
 
 ## Run example
 
-This code is really functional.
+This code is really useful.
 
  Frontend folder contain you own routes and server, you can add your View and Helper-Model layer
 
