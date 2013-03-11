@@ -27,6 +27,90 @@ Simple Components helps build their bundled applications simply. Unpretentious w
 
 	}).listen(port);
 
+## Routes
+
+Routes are nested objects that represents paths e resources
+
+Basic routes are (Routes/routes.js):
+
+
+	module.exports = [
+
+		//STATIC MATCH notfound page and errorPage
+		{
+			path:/^.*\/notFound$/,
+			resource:{
+				controller:'index',
+				action:'notfound'
+			}
+		},
+		{
+			path:/^.*\/errorFound$/,
+			resource:{
+				controller:'index',
+				action:'errorfound'
+			}
+		},
+
+		//index common pattern ---- match first!
+		{
+			path:/^\/$/,
+			resource:{
+				controller:'index',
+				action:'index'
+			}
+		},
+		//controller/action/params[0]/params[1]/params[2]...
+		{
+			path:/^\/([^\/]+)\/([^\/]+)\/?(.*)$/,
+			resource:{
+				controller:1,
+				action:2,
+				params:3
+				//,_continue:true //if you have personal pattern you need passed common patterns until find default pattern
+			}
+		},
+		{
+			path:/^\/([^\/]+)\/?$/,
+			resource:{
+				controller:1,
+				action:'index'
+				//,_continue:true //if you have personal pattern you need passed common patterns until find default pattern
+			}
+		},
+		//--------------------------------------------------
+
+		//(NOTE: _continue:true are disabled on above common patter, the loop match cannot pass this item, because already finded pattern on common pattern. uncomment _continue:true if you like create alias or personal patterns)
+		//--------------------------------------------------
+		//after match default pattern, rename to personal pattern
+		{
+			path:/^\/home.*/,
+			resource:{
+				controller:'index'
+			}
+		}
+
+	];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
