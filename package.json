@@ -1,0 +1,28 @@
+{
+  "name": "Simple-node",
+  "description": "Simple Components helps build their bundled applications simply. Unpretentious way we want to help you save time and less development efforts.",
+  "keywords": [
+    "Dispacth",
+    "Controller",
+    "Simple",
+    "Router",
+    "MVC"
+  ],
+  "version": "0.0.8",
+  "main": "index",
+  "homepage": "https://github.com/stvkoch/Simple-node",
+  "repository": "git@github.com:stvkoch/Simple-node.git",
+  "author": "Steven Koch <stvkoch@gmail.com>",
+  "engines": [
+    "node >=0.8.0"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha":"*",
+    "jshint":"*"
+  }
+}

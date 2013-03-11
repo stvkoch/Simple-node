@@ -3,7 +3,6 @@ var dispatch = require( 'Simple/Controller/Dispatch' );
 dispatch.resource( resource );
 */
 
-
 module.exports = {
 	resource: function( resource, request, response ){
 

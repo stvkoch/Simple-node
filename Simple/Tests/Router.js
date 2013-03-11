@@ -8,10 +8,3 @@ exports.testSomethingElse = function(test){
     test.ok(false, "this assertion should fail");
     test.done();
 };
-
-
-
-
-node.js -> javascript
-
-- 50x php

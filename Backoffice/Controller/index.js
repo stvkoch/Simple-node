@@ -9,23 +9,23 @@ var IndexController = require('Simple/Controller/Base');
 IndexController.actions = {
 	index: function(request, response, resource){
 		response.writeHead(200);
-    	response.end("Index\n");
+		response.end("Index\n" + resource.params.join(' - ') );
 	},
 	show: function(request, response){
 		response.writeHead(200);
-    	response.end("Show\n");
+		response.end("Show\n");
 	},
 	list: function(request, response){
 		response.writeHead(200);
-    	response.end("List\n");
+		response.end("List\n");
 	},
 	notfound: function(request, response){
 		response.writeHead(401);
-    	response.end("NOT FOUND\n");
+		response.end("NOT FOUND\n");
 	},
 	errorfound: function(request, response){
 		response.writeHead(501);
-    	response.end("Error\n");
+		response.end("Error\n");
 	}
 };
 

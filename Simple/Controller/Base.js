@@ -6,4 +6,4 @@ module.exports = {
 	call: function( resource, request, response ){
 		return this.actions[resource.action](request, response, resource);
 	}
-}
+};
