@@ -134,4 +134,4 @@ Any question, please send message to:
 - Steven Koch <stvkoch@gmail.com>
 
 
-[https://github.com/stvkoch/Simple-node/wiki]( Wiki on Github/stvkoch/Simple-node/wiki )
+[Wiki on Github/stvkoch/Simple-node/wiki](https://github.com/stvkoch/Simple-node/wiki)
