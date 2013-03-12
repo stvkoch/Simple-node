@@ -16,14 +16,14 @@ Simple Components helps build their bundled applications simply. Unpretentious w
 
 		var requestParsed = require('url').parse( request.url, true );
 		var router = require('Simple/Router/Base');
-		router.routes = require( 'Routes/routes' );//inject routes on router..see Routes/routes.js
+		router.routes = require( 'Frontend/Routes/routes' );
+		router.defaultResource = require('Simple/Resource/Base');
 
-		//main concept are resource that represent module/method/outputFormat on node.js
-		var resource = router.getResourceByUri(requestParsed.pathname);
+		router.resourceByRequest(requestParsed, response, function( request, response, resource ){
+			var dispatch = require('Simple/Dispatch/Base');
+			dispatch.resource(request, response, resource);
+		});
 
-		//this dispatch resource on system
-		var dispatch = require('Simple/Controller/Dispatch');
-		dispatch.resource(resource, requestParsed, response);
 
 	}).listen(port);
 
