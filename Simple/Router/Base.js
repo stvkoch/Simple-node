@@ -16,8 +16,8 @@ module.exports = {
 		setResource:function(resource){
 			this.defaultResource=resource;
 		},
-		getResourceByUri: function(uri){
-			return this.translate(uri);
+		resourceByRequest: function(request, response, callback){
+			return callback(request, response, this.translate(request.pathname));
 		},
 		translate:function(uri){
 

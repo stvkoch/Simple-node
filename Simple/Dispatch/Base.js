@@ -4,7 +4,7 @@ dispatch.resource( resource );
 */
 
 module.exports = {
-	resource: function( resource, request, response ){
+	resource: function( request, response, resource ){
 
 			process.nextTick( function(){
 				try{

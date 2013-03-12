@@ -27,13 +27,17 @@ if (cluster.isMaster && process.argv[3] ) {
 	// In this case its a HTTP server
 	http.createServer(function(request, response) {
 
+		//config
 		var requestParsed = require('url').parse( request.url, true );
 		var router = require('Simple/Router/Base');
 		router.routes = require( 'Frontend/Routes/routes' );
 		router.defaultResource = require('Simple/Resource/Base');
-		var resource = router.getResourceByUri(requestParsed.pathname);
-		var dispatch = require('Simple/Dispatch/Base');
-		dispatch.resource(resource, requestParsed, response);
+
+
+		router.resourceByRequest(requestParsed, response, function( request, response, resource ){
+			var dispatch = require('Simple/Dispatch/Base');
+			dispatch.resource(request, response, resource);
+		});
 
 	}).listen(port);
 }
