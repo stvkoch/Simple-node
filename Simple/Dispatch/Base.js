@@ -8,7 +8,7 @@ module.exports = {
 
 			process.nextTick( function(){
 				try{
-
+					console.log( '-> Dispatch to: ' + resource.module+'/Controller/'+resource.controller )
 					var controller = require( resource.module+'/Controller/'+resource.controller );
 
 					if(controller.has(resource)){

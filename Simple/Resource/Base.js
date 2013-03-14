@@ -1,9 +1,7 @@
 module.exports = {
-	// body...
-	
-		module:'Frontend',
-		controller:'index',
-		action:'index',
+		module:'notfound',
+		controller:'notfound',
+		action:'notfound',
 		format:'html',
 		params:null
 	

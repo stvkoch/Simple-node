@@ -26,7 +26,6 @@ if (cluster.isMaster && process.argv[3] ) {
 	// Workers can share any TCP connection
 	// In this case its a HTTP server
 	http.createServer(function(request, response) {
-
 		//config
 		var requestParsed = require('url').parse( request.url, true );
 		var router = require('Simple/Router/Base');
