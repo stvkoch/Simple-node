@@ -125,10 +125,13 @@ This code is really useful.
 
 
 
-
+Atention: this week(2º week march) I add midleware feature!
 
 
 Truly functional, but work in progress. New components are added constantly
 
 Any question, please send message to:
 - Steven Koch <stvkoch@gmail.com>
+
+
+[Wiki on Github/stvkoch/Simple-node/wiki](https://github.com/stvkoch/Simple-node/wiki)
