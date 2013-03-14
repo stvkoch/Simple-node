@@ -1,9 +1,4 @@
-/*
-exports.dispatch = function( resource ){
-	var controller = require( resource.module+'/'+resource.controller );
-	controller.call( resource.action, resource.request, resource.response );
-}
-*/
+
 var IndexController = require('Simple/Controller/Base');
 
 IndexController.actions = {
